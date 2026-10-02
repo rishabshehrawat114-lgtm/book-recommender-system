@@ -1,0 +1,43 @@
+{
+  "dataset_statistics": {
+    "total_explicit_ratings": 14961,
+    "train_ratings": 14168,
+    "test_ratings": 793,
+    "total_users": 839,
+    "eligible_users": 793,
+    "excluded_users": 46,
+    "exclusion_reasons": {
+      "single_rating_non_positive": 8,
+      "multiple_ratings_no_positive": 6,
+      "single_rating_positive": 32
+    },
+    "total_books": 742,
+    "positive_threshold": 7.0,
+    "seed": 42
+  },
+  "leakage_verification": {
+    "test_pairs_absent_from_train": true,
+    "leaked_pairs_count": 0,
+    "partition_exact": true,
+    "popularity_strictly_from_train": true,
+    "training_matrix_free_of_test_data": true,
+    "separate_evaluation_model_used": true,
+    "all_leakage_checks_passed": true
+  },
+  "cosine_recommender_metrics": {
+    "Precision@5": 0.017654476670870115,
+    "Precision@10": 0.01210592686002522,
+    "Recall@5": 0.08827238335435057,
+    "Recall@10": 0.1210592686002522,
+    "NDCG@5": 0.06460337403728407,
+    "NDCG@10": 0.07494546716794585
+  },
+  "popularity_baseline_metrics": {
+    "Precision@5": 0.009331651954602775,
+    "Precision@10": 0.006305170239596469,
+    "Recall@5": 0.04665825977301387,
+    "Recall@10": 0.06305170239596469,
+    "NDCG@5": 0.02843897582524986,
+    "NDCG@10": 0.033956300244890006
+  }
+}
